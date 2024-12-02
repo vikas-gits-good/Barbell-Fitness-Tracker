@@ -26,6 +26,12 @@ participant = f.split("-")[0][-1]
 label = f.split("-")[1]
 category = f.split("-")[2].rstrip("12345")
 
+# dict_meta = {
+#     "Participant": f.split("-")[0][-1],
+#     "Label": f.split("-")[1],
+#     "Category": f.split("-")[2].rstrip("12345"),
+# }
+
 df = pd.read_csv(f)
 
 df["Participant"] = participant
@@ -160,6 +166,8 @@ sampling = {
 }
 
 data_merged.columns
+
+# data_merged.info()
 
 # data_merged[:1000].resample(rule="200ms").apply(sampling)
 

@@ -22,7 +22,7 @@ plt.plot(set_df["acl_y"].reset_index(drop=True))
 # --------------------------------------------------------------
 for lbl in df["Label"].unique():
     subset = df[df["Label"] == lbl]
-    # display(subset.head(2))
+    display(subset.head(2))
     fig, ax = plt.subplots()
     plt.plot(subset["acl_y"].reset_index(drop=True), label=lbl)
     plt.legend()

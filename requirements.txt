@@ -6,3 +6,4 @@ scipy
 tensorflow
 matplotlib
 scikit-learn
+seaborn
